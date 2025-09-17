@@ -95,3 +95,5 @@ class Favorite(db.Model):
             "planet_id": self.planet_id,
             "character_id": self.character_id
         }
+    
+
