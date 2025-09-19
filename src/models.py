@@ -79,7 +79,7 @@ class Favorite(db.Model):
     
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     user_id: Mapped[int] = mapped_column(Integer, ForeignKey('users.id'), nullable=False)
-    plant_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey('planets.id'), nullable=True)
+    planet_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey('planets.id'), nullable=True)
     character_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey('characters.id'), nullable=True)
 
 
